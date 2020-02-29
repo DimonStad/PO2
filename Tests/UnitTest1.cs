@@ -25,7 +25,7 @@ public class UnitTest1{
             {
                 Console.SetOut(sw);
                 menu.Start("qwe");
-                string excepted = $"Incorrect input.{Environment.NewLine}";
+                string excepted = $"";
                 Assert.Equal(excepted, sw.ToString());
             }
         }
@@ -40,7 +40,7 @@ public class UnitTest1{
             {
                 Console.SetOut(sw);
                 menu.Start("dkjfgnkjdfngndkj + kdjfgnjkdnfgn - jdkfgnjkdnfgnjdf");
-                string excepted = $"Incorrect input.{Environment.NewLine}";
+                string excepted = $"";
                 Assert.Equal(excepted, sw.ToString());
             }
         }
@@ -89,7 +89,7 @@ public class UnitTest1{
                 menu.Start("help");
                 string excepted = $"cls - clear all screen.{Environment.NewLine}" +
                                   $"stop - close programm.{Environment.NewLine}" +
-                                  $"expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sqrt x ; sqr x.{Environment.NewLine}";
+                                  $"expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sqrt x ; sqr x.\n{Environment.NewLine}";
                 Assert.Equal(excepted, sw.ToString());
             }
         }
