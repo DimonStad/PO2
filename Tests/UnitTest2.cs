@@ -86,7 +86,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Sin method test
+    /// Sin method test.
     /// </summary>
     [Fact]
     public void TestMethodSin(){
@@ -95,7 +95,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Cos method test
+    /// Cos method test.
     /// </summary>
     [Fact]
     public void TestMethodCos(){
@@ -104,7 +104,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Sin method test
+    /// Sin method test.
     /// </summary>
     [Fact]
     public void TestMethodSin2(){
@@ -113,7 +113,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Tan method test
+    /// Tan method test.
     /// </summary>
     [Fact]
     public void TestMethodTan(){
@@ -122,7 +122,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Exp method test
+    /// Exp method test.
     /// </summary>
     [Fact]
     public void TestMethodExp(){
@@ -131,7 +131,7 @@ public class UnitTest2{
     }
 
     /// <summary>
-    /// Log method test
+    /// Log method test.
     /// </summary>
     [Fact]
     public void TestMethodLog(){
