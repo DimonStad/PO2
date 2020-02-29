@@ -89,7 +89,7 @@ public class UnitTest1{
                 menu.Start("help");
                 string excepted = $"cls - clear all screen.{Environment.NewLine}" +
                                   $"stop - close programm.{Environment.NewLine}" +
-                                  $"expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sqrt x ; sqr x.\n{Environment.NewLine}";
+                                  $"expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x.\n{Environment.NewLine}";
                 Assert.Equal(excepted, sw.ToString());
             }
         }
