@@ -5590,11 +5590,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\1 Lab\\1 Lab.csproj",
+      "projectUniqueName": "C:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\2 Lab\\1 Lab.csproj",
       "projectName": "1 Lab",
-      "projectPath": "c:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\1 Lab\\1 Lab.csproj",
+      "projectPath": "C:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\2 Lab\\1 Lab.csproj",
       "packagesPath": "C:\\Users\\tules\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\1 Lab\\obj\\",
+      "outputPath": "C:\\Users\\tules\\Documents\\Study\\Labs and practice\\2 Curse\\2 Semestr\\SOFTWARE development tools\\2 Lab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tules\\AppData\\Roaming\\NuGet\\NuGet.Config",
