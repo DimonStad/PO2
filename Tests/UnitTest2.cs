@@ -1,5 +1,6 @@
 using Xunit;
 using _1_Lab;
+using System;
 
 public class UnitTest2{
 
@@ -21,74 +22,79 @@ public class UnitTest2{
     /// Sum method test.
     /// </summary>
     [Fact]
-    public void TestMethodSum()
-        {
-            excepted = 4;
-            calculate.RES = 2;
-            Assert.Equal(excepted, calculate.Sum(2));
-        }
+    public void TestMethodSum(){
+        excepted = 4;
+        calculate.RES = 2;
+        Assert.Equal(excepted, calculate.Sum(2));
+    }
     
     /// <summary>
     /// Diff method test.
     /// </summary>
     [Fact]
-    public void TestMethodDiff()
-        {
-            excepted = 2;
-            calculate.RES = 4;
-            Assert.Equal(excepted, calculate.Diff(2));
-        }
+    public void TestMethodDiff(){
+        excepted = 2;
+        calculate.RES = 4;
+        Assert.Equal(excepted, calculate.Diff(2));
+    }
 
     /// <summary>
     /// Div method test.
     /// </summary>
     [Fact]
-    public void TestMethodDiv()
-        {
-            excepted = 2;
-            calculate.RES = 4;
-            Assert.Equal(excepted, calculate.Division(2));
-        }
+    public void TestMethodDiv(){
+        excepted = 2;
+        calculate.RES = 4;
+        Assert.Equal(excepted, calculate.Division(2));
+    }
 
     /// <summary>
     /// Mult method test.
     /// </summary>
     [Fact]
-    public void TestMethodMult()
-        {
-            excepted = 8;
-            calculate.RES = 2;
-            Assert.Equal(excepted, calculate.Multiplication(4));
-        }
+    public void TestMethodMult(){
+        excepted = 8;
+        calculate.RES = 2;
+        Assert.Equal(excepted, calculate.Multiplication(4));
+    }
 
     /// <summary>
     /// Sqr method test.
     /// </summary>
     [Fact]
-    public void TestMethodSqr()
-        {
-            excepted = 16;
-            Assert.Equal(excepted, calculate.Sqr(4));
-        }
+    public void TestMethodSqr(){
+        excepted = 16;
+        Assert.Equal(excepted, calculate.Sqr(4));
+    }
 
     /// <summary>
     /// Sqrt method test.
     /// </summary>
     [Fact]
-    public void TestMethodSqrt()
-        {
-            excepted = 4;
-            Assert.Equal(excepted, calculate.Sqrt(16));
-        }
+    public void TestMethodSqrt(){
+        excepted = 4;
+        Assert.Equal(excepted, calculate.Sqrt(16));
+    }
 
     /// <summary>
     /// Abs method test.
     /// </summary>
     [Fact]
-    public void TestMethodAbs()
-        {
-            excepted = 1;
-            Assert.Equal(excepted, calculate.Abs(-1));
-        }
+    public void TestMethodAbs(){
+        excepted = 1;
+        Assert.Equal(excepted, calculate.Abs(-1));
+    }
     #endregion
+
+    [Fact]
+    public void TestMethodSin(){
+        excepted = Math.Sin(3);
+        Assert.Equal(excepted, calculate.Sin(3));
+    }
+
+    [Fact]
+    public void TestMethodCos(){
+        excepted = Math.Cos(4);
+        Assert.Equal(excepted, calculate.Cos(4));
+    }
 }
