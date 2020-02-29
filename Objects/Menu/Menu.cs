@@ -82,6 +82,14 @@ namespace _1_Lab
                         if (oper == "abs"){
                             Console.WriteLine($"abs({digits[1]}) = {calculate.Abs(double.Parse(digits[1]))}");
                         }
+                        
+                        if (oper == "sin"){
+                            Console.WriteLine($"sin({digits[1]}) = {calculate.Sin(double.Parse(digits[1]))}");
+                        }
+
+                        if (oper == "cos"){
+                            Console.WriteLine($"cos({digits[1]}) = {calculate.Cos(double.Parse(digits[1]))}");
+                        }
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
                 }
@@ -100,11 +108,17 @@ namespace _1_Lab
                         if (oper == "abs"){
                             Console.WriteLine($"abs({calculate.RES}) = {calculate.Abs()}");
                         }
-                                                    
+
+                        if (oper == "sin"){
+                            Console.WriteLine($"sin({calculate.RES}) = {calculate.Sin()}");
+                        }
+
+                        if (oper == "cos"){
+                            Console.WriteLine($"cos({calculate.RES}) = {calculate.Cos()}");
+                        }           
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
                 }
-
             } while (flag);
         }
 
