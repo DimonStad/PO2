@@ -97,4 +97,10 @@ public class UnitTest2{
         excepted = Math.Cos(4);
         Assert.Equal(excepted, calculate.Cos(4));
     }
+
+    [Fact]
+    public void TestMethodSin2(){
+        excepted = Math.Sin(30);
+        Assert.Equal(excepted, calculate.Sin(30));
+    }
 }
