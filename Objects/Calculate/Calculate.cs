@@ -162,7 +162,29 @@ namespace _1_Lab
         /// <returns>The method returns the number sin</returns>
         public double Sin(double b){
             res = Math.Sin(b);
-            return Math.Sin(b);
+            return res
+        }
+        #endregion
+
+        #region Cos
+        /// <summary>
+        /// Cos result.
+        /// </summary>
+        /// <returns>The method returns the number cos.</returns>
+        public double Cos(){
+            double temp = Math.Cos(res);
+            res = temp;
+            return res;
+        }
+        
+        /// <summary>
+        /// Cos enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number cos.</returns>
+        public double Cos(double b){
+            res = Math.Cos(b);
+            return res;
         }
         #endregion
     }
