@@ -1,0 +1,12 @@
+{
+	"Snippet Lab1: if": {
+		"prefix": "user if",
+		"body": [
+		  "if(${1:true})",
+		  "{",
+		  "\t$2",
+		  "}"
+		],
+		"description": "Snippet Lab1: if. Normal if."
+	  }
+}

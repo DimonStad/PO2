@@ -1,0 +1,13 @@
+{
+	"Snippet Lab1: do_while": {
+		"prefix": "user do_while",
+		"body": [
+		  "do",
+		  "{",
+		  "\t$1",
+		  "}",
+		  "while(${2:true})",
+		],
+		"description": "Snippet Lab1: do_while. Normal do_while."
+	  }
+}

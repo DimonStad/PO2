@@ -1,0 +1,12 @@
+{
+	"Snippet Lab1: cycle for": {
+		"prefix": "user for",
+		"body": [
+		  "for (int i$1 = 0; i < ${2:lenght}; ++i)",
+		  "{",
+		  "\t$3",
+		  "}"
+		],
+		"description": "Snippet Lab1: cycle for. Normal cycle for."
+	  }
+}

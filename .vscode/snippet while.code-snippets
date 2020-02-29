@@ -1,0 +1,12 @@
+{
+	"Snippet Lab1: while": {
+		"prefix": "user while",
+		"body": [
+		  "while(${1:true})",
+		  "{",
+		  "\t$2",
+		  "}"
+		],
+		"description": "Snippet Lab1: while. Normal while."
+	  }
+}
