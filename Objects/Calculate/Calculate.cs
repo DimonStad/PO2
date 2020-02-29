@@ -230,5 +230,27 @@ namespace _1_Lab
             return res;
         }
         #endregion
+
+        #region Log
+        /// <summary>
+        /// Log result.
+        /// </summary>
+        /// <returns>The method returns the number log.</returns>
+        public double Log(){
+            double temp = Math.Log(res);
+            res = temp;
+            return res;
+        }
+
+        /// <summary>
+        /// Log enter number.
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number log.</returns>
+        public double Log(double b){
+            res = Math.Log(b);
+            return res;
+        }
+        #endregion
     }
 }
