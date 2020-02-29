@@ -224,7 +224,7 @@ namespace _1_Lab
         /// Exp enter number.
         /// </summary>
         /// <param name="b">The number is entered from the console.</param>
-        /// <returns>The method returns the number exp.</returns>
+        /// <returns>The method returns the number exp. </returns>
         public double Exp(double b){
             res = Math.Exp(b);
             return res;
