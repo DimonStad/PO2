@@ -31,7 +31,7 @@ namespace _1_Lab
                 if (command.Trim() == "help"){
                     Console.WriteLine("\ncls - clear all screen.");
                     Console.WriteLine("stop - close programm.");
-                    Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x.\n");
+                    Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; log ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x ; log x.\n");
                 }
 
                 if (command.Trim() == "cls"){
@@ -98,6 +98,10 @@ namespace _1_Lab
                         if (oper == "exp"){
                             Console.WriteLine($"exp({digits[1]}) = {calculate.Exp(double.Parse(digits[1]))}");
                         }
+
+                        if (oper == "log"){
+                            Console.WriteLine($"log({digits[1]}) = {calculate.Log(double.Parse(digits[1]))}");
+                        }
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
                 }
@@ -131,6 +135,10 @@ namespace _1_Lab
 
                         if (oper == "exp"){
                             Console.WriteLine($"exp({calculate.RES}) = {calculate.Exp()}");
+                        }
+
+                        if (oper == "log"){
+                            Console.WriteLine($"log({calculate.RES}) = {calculate.Log()}");
                         }           
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
@@ -149,7 +157,7 @@ namespace _1_Lab
             if (command.Trim() == "help"){
                 Console.WriteLine("cls - clear all screen.");
                 Console.WriteLine("stop - close programm.");
-                Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x.\n");
+                Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; log ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x ; log x.\n");
             }
 
             if (command.Trim() == "cls"){
@@ -213,6 +221,10 @@ namespace _1_Lab
                     if (oper == "exp"){
                         Console.WriteLine($"exp({digits[1]}) = {calculate.Exp(double.Parse(digits[1]))}");
                     }
+
+                    if (oper == "log"){
+                            Console.WriteLine($"log({digits[1]}) = {calculate.Log(double.Parse(digits[1]))}");
+                    }
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
             }
@@ -246,7 +258,11 @@ namespace _1_Lab
 
                     if (oper == "exp"){
                         Console.WriteLine($"exp({calculate.RES}) = {calculate.Exp()}");
-                    }          
+                    }
+
+                    if (oper == "log"){
+                            Console.WriteLine($"log({calculate.RES}) = {calculate.Log()}");
+                    }           
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
             }

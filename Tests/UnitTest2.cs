@@ -129,5 +129,14 @@ public class UnitTest2{
         excepted = Math.Exp(6);
         Assert.Equal(excepted, calculate.Exp(6));
     }
-     #endregion
+
+    /// <summary>
+    /// Log method test
+    /// </summary>
+    [Fact]
+    public void TestMethodLog(){
+        excepted = Math.Log(10);
+        Assert.Equal(excepted, calculate.Log(10));
+    }
+    #endregion
 }
