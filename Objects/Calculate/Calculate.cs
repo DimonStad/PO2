@@ -208,5 +208,27 @@ namespace _1_Lab
             return res;
         }
         #endregion
+
+        #region Exp
+        /// <summary>
+        /// Exp result.
+        /// </summary>
+        /// <returns>The method returns the number exp.</returns>
+        public double Exp(){
+            double temp = Math.Exp(res);
+            res = temp;
+            return res;
+        }
+
+        /// <summary>
+        /// Exp enter number.
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number exp.</returns>
+        public double Exp(double b){
+            res = Math.Exp(b);
+            return res;
+        }
+        #endregion
     }
 }
