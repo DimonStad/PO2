@@ -86,7 +86,7 @@ namespace _1_Lab
         public double Sqrt() {
             double temp = Math.Sqrt(res);
             res = temp;
-            return temp; 
+            return res; 
         }
         
         /// <summary>
@@ -96,7 +96,7 @@ namespace _1_Lab
         /// <returns>The method returns the root of the number.</returns>
         public double Sqrt(double b) { 
             res = Math.Sqrt(b);
-            return Math.Sqrt(b); 
+            return res; 
         }
         #endregion
 
@@ -108,7 +108,7 @@ namespace _1_Lab
         public double Sqr() {
             double temp = Math.Pow(res, 2);
             res = temp;
-            return temp; 
+            return res; 
         }
 
         /// <summary>
@@ -118,7 +118,7 @@ namespace _1_Lab
         /// <returns>The method returns the square of the number.</returns>
         public double Sqr(double b) {
             res = Math.Pow(b, 2); 
-            return Math.Pow(b, 2); 
+            return res; 
         }
         #endregion
         
@@ -130,7 +130,7 @@ namespace _1_Lab
         public double Abs() {
             double temp = Math.Abs(res);
             res = temp;
-            return temp; 
+            return res; 
         }
         
         /// <summary>
@@ -140,7 +140,7 @@ namespace _1_Lab
         /// <returns>The method returns the number module.</returns>
         public double Abs(double b) { 
             res = Math.Abs(b);
-            return Math.Abs(b); 
+            return res; 
         }
         #endregion
 
@@ -162,7 +162,7 @@ namespace _1_Lab
         /// <returns>The method returns the number sin</returns>
         public double Sin(double b){
             res = Math.Sin(b);
-            return res
+            return res;
         }
         #endregion
 
@@ -176,7 +176,7 @@ namespace _1_Lab
             res = temp;
             return res;
         }
-        
+
         /// <summary>
         /// Cos enter number
         /// </summary>
