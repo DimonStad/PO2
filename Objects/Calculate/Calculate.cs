@@ -187,5 +187,26 @@ namespace _1_Lab
             return res;
         }
         #endregion
+
+        #region Tan
+        /// <summary>
+        /// Tan result.
+        /// </summary>
+        /// <returns>The method returns the number tan.</returns>
+        public double Tan(){
+            double temp = Math.Tan(res);
+            res = temp;
+            return res;
+        }
+        /// <summary>
+        /// Cos enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number tan.</returns>
+        public double Tan(double b){
+            res = Math.Tan(b);
+            return res;
+        }
+        #endregion
     }
 }
