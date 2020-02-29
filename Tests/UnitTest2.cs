@@ -129,6 +129,5 @@ public class UnitTest2{
         excepted = Math.Exp(6);
         Assert.Equal(excepted, calculate.Exp(6));
     }
-
      #endregion
 }
