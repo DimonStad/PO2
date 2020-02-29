@@ -84,23 +84,51 @@ public class UnitTest2{
         excepted = 1;
         Assert.Equal(excepted, calculate.Abs(-1));
     }
-    #endregion
 
+    /// <summary>
+    /// Sin method test
+    /// </summary>
     [Fact]
     public void TestMethodSin(){
         excepted = Math.Sin(3);
         Assert.Equal(excepted, calculate.Sin(3));
     }
 
+    /// <summary>
+    /// Cos method test
+    /// </summary>
     [Fact]
     public void TestMethodCos(){
         excepted = Math.Cos(4);
         Assert.Equal(excepted, calculate.Cos(4));
     }
 
+    /// <summary>
+    /// Sin method test
+    /// </summary>
     [Fact]
     public void TestMethodSin2(){
         excepted = Math.Sin(30);
         Assert.Equal(excepted, calculate.Sin(30));
     }
+
+    /// <summary>
+    /// Tan method test
+    /// </summary>
+    [Fact]
+    public void TestMethodTan(){
+        excepted = Math.Tan(4);
+        Assert.Equal(excepted, calculate.Tan(4));
+    }
+
+    /// <summary>
+    /// Exp method test
+    /// </summary>
+    [Fact]
+    public void TestMethodExp(){
+        excepted = Math.Exp(6);
+        Assert.Equal(excepted, calculate.Exp(6));
+    }
+
+     #endregion
 }

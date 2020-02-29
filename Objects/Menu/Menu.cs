@@ -31,7 +31,7 @@ namespace _1_Lab
                 if (command.Trim() == "help"){
                     Console.WriteLine("\ncls - clear all screen.");
                     Console.WriteLine("stop - close programm.");
-                    Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sqrt x ; sqr x.\n");
+                    Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x.\n");
                 }
 
                 if (command.Trim() == "cls"){
@@ -90,6 +90,14 @@ namespace _1_Lab
                         if (oper == "cos"){
                             Console.WriteLine($"cos({digits[1]}) = {calculate.Cos(double.Parse(digits[1]))}");
                         }
+
+                        if (oper == "tan"){
+                            Console.WriteLine($"tan({digits[1]}) = {calculate.Tan(double.Parse(digits[1]))}");
+                        }
+
+                        if (oper == "exp"){
+                            Console.WriteLine($"exp({digits[1]}) = {calculate.Exp(double.Parse(digits[1]))}");
+                        }
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
                 }
@@ -115,6 +123,14 @@ namespace _1_Lab
 
                         if (oper == "cos"){
                             Console.WriteLine($"cos({calculate.RES}) = {calculate.Cos()}");
+                        }
+
+                        if (oper == "tan"){
+                            Console.WriteLine($"tan({calculate.RES}) = {calculate.Tan()}");
+                        }
+
+                        if (oper == "exp"){
+                            Console.WriteLine($"exp({calculate.RES}) = {calculate.Exp()}");
                         }           
                     }
                     catch (FormatException ex) { Console.WriteLine(ex); }
@@ -133,7 +149,7 @@ namespace _1_Lab
             if (command.Trim() == "help"){
                 Console.WriteLine("cls - clear all screen.");
                 Console.WriteLine("stop - close programm.");
-                Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sqrt x ; sqr x.\n");
+                Console.WriteLine("expression of the form: x + y ; x - y ; x * y ; x / y ; sqrt ; sqr ; abs ; sin ; cos ; tan ; exp ; sqrt x ; sqr x ; abs x ; sin x ; cos x ; tan x ; exp x.\n");
             }
 
             if (command.Trim() == "cls"){
@@ -189,6 +205,14 @@ namespace _1_Lab
                     if (oper == "cos"){
                         Console.WriteLine($"cos({digits[1]}) = {calculate.Cos(double.Parse(digits[1]))}");
                     }
+
+                    if (oper == "tan"){
+                            Console.WriteLine($"tan({digits[1]}) = {calculate.Tan(double.Parse(digits[1]))}");
+                        }
+                    
+                    if (oper == "exp"){
+                        Console.WriteLine($"exp({digits[1]}) = {calculate.Exp(double.Parse(digits[1]))}");
+                    }
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
             }
@@ -214,7 +238,15 @@ namespace _1_Lab
 
                     if (oper == "cos"){
                         Console.WriteLine($"cos({calculate.RES}) = {calculate.Cos()}");
-                    }           
+                    } 
+
+                    if (oper == "tan"){
+                         Console.WriteLine($"tan({calculate.RES}) = {calculate.Tan()}");
+                    }
+
+                    if (oper == "exp"){
+                        Console.WriteLine($"exp({calculate.RES}) = {calculate.Exp()}");
+                    }          
                 }
                 catch (FormatException ex) { Console.WriteLine(ex); }
             }
