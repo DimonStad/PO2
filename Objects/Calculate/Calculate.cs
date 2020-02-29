@@ -22,10 +22,10 @@ namespace _1_Lab
 
         #region Multiplication
         /// <summary>
-        /// The method returns the product of two numbers.
+        /// Multiplication enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the product of two numbers.</returns>
         public double Multiplication(double b)
         {
             res *= b;
@@ -35,10 +35,10 @@ namespace _1_Lab
         
         #region Division
         /// <summary>
-        /// The method returns the division of two numbers.
+        /// Division enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the division of two numbers.</returns>
         public double Division(double b)
         {
             if(res > 0 && b == 0)
@@ -54,10 +54,10 @@ namespace _1_Lab
         
         #region Sum
         /// <summary>
-        /// The method returns the sum of two numbers.
+        /// Sum enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the sum of two numbers.</returns>
         public double Sum(double b)
         {
             res += b;
@@ -67,10 +67,10 @@ namespace _1_Lab
         
         #region Diff
         /// <summary>
-        /// The method returns the difference of two numbers.
+        /// Diff enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the difference of two numbers.</returns>
         public double Diff(double b)
         {
             res -= b;
@@ -80,9 +80,9 @@ namespace _1_Lab
 
         #region Sqrt
         /// <summary>
-        /// The method returns the root of the number.
+        /// Sqrt result
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The method returns the root of the number.</returns>
         public double Sqrt() {
             double temp = Math.Sqrt(res);
             res = temp;
@@ -90,10 +90,10 @@ namespace _1_Lab
         }
         
         /// <summary>
-        /// The method returns the root of the number. The number is entered from the console.
+        /// Sqrt enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the root of the number.</returns>
         public double Sqrt(double b) { 
             res = Math.Sqrt(b);
             return Math.Sqrt(b); 
@@ -102,9 +102,9 @@ namespace _1_Lab
 
         #region Sqr
         /// <summary>
-        /// The method returns the square of the number.
+        /// Sqr result
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The method returns the square of the number.</returns>
         public double Sqr() {
             double temp = Math.Pow(res, 2);
             res = temp;
@@ -112,10 +112,10 @@ namespace _1_Lab
         }
 
         /// <summary>
-        /// The method returns the square of the number. The number is entered from the console.
+        /// Sqr enter number.
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the square of the number.</returns>
         public double Sqr(double b) {
             res = Math.Pow(b, 2); 
             return Math.Pow(b, 2); 
@@ -124,9 +124,9 @@ namespace _1_Lab
         
         #region Abs
         /// <summary>
-        /// The method returns the number module.
+        /// Abs result
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The method returns the number module.</returns>
         public double Abs() {
             double temp = Math.Abs(res);
             res = temp;
@@ -134,13 +134,36 @@ namespace _1_Lab
         }
         
         /// <summary>
-        /// The method returns the number module. The number is entered from the console.
+        /// Abs enter number
         /// </summary>
-        /// <param name="b"></param>
-        /// <returns></returns>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number module.</returns>
         public double Abs(double b) { 
             res = Math.Abs(b);
-            return Math.Abs(b); }
+            return Math.Abs(b); 
+        }
+        #endregion
+
+        #region Sin
+        /// <summary>
+        /// Sin result.
+        /// </summary>
+        /// <returns>The method returns the number sin.</returns>
+        public double Sin(){
+            double temp = Math.Sin(res);
+            res = temp;
+            return res;
+        }
+
+        /// <summary>
+        /// Sin enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the number sin</returns>
+        public double Sin(double b){
+            res = Math.Sin(b);
+            return Math.Sin(b);
+        }
         #endregion
     }
 }
