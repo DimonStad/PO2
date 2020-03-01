@@ -8,6 +8,7 @@ namespace _1_Lab
         /// Field where the current number is stored.
         /// </summary>
         private double res;
+        private byte res1;
         #endregion
 
         #region Settors and Gettors
@@ -18,6 +19,7 @@ namespace _1_Lab
         /// Settors and Gettors
         /// </value>
         public double RES { set => res = value; get => res; }
+        public byte RES1 { set => res1 = value; get => res1;}
         #endregion
 
         #region Multiplication
@@ -26,10 +28,19 @@ namespace _1_Lab
         /// </summary>
         /// <param name="b">The number is entered from the console.</param>
         /// <returns>The method returns the product of two numbers.</returns>
-        public double Multiplication(double b)
-        {
+        public double Multiplication(double b){
             res *= b;
             return res;
+        }
+
+        /// <summary>
+        /// Multiplication enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the product of two numbers.</returns>
+        public byte Multiplication(byte b){
+            res1 *= b;
+            return res1;
         }
         #endregion
         
@@ -39,8 +50,7 @@ namespace _1_Lab
         /// </summary>
         /// <param name="b">The number is entered from the console.</param>
         /// <returns>The method returns the division of two numbers.</returns>
-        public double Division(double b)
-        {
+        public double Division(double b){
             if(res > 0 && b == 0)
                 return double.PositiveInfinity;
 
@@ -48,7 +58,16 @@ namespace _1_Lab
                 return double.NegativeInfinity;
             res /= b;
             return res;
+        }
 
+        /// <summary>
+        /// Division enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the division of two numbers.</returns>
+        public byte Division(byte b){
+            res1 /= b;
+            return b;
         }
         #endregion
         
@@ -58,10 +77,19 @@ namespace _1_Lab
         /// </summary>
         /// <param name="b">The number is entered from the console.</param>
         /// <returns>The method returns the sum of two numbers.</returns>
-        public double Sum(double b)
-        {
+        public double Sum(double b){
             res += b;
             return res;
+        }
+
+        /// <summary>
+        /// Sum enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the sum of two numbers.</returns>
+        public byte Sum(byte b){
+            res1 += b;
+            return res1;
         }
         #endregion
         
@@ -71,10 +99,19 @@ namespace _1_Lab
         /// </summary>
         /// <param name="b">The number is entered from the console.</param>
         /// <returns>The method returns the difference of two numbers.</returns>
-        public double Diff(double b)
-        {
+        public double Diff(double b){
             res -= b;
             return res;
+        }
+
+        /// <summary>
+        /// Diff enter number
+        /// </summary>
+        /// <param name="b">The number is entered from the console.</param>
+        /// <returns>The method returns the difference of two numbers.</returns>
+        public byte Diff(byte b){
+            res1 -= b;
+            return res1;
         }
         #endregion
 

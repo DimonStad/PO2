@@ -1,0 +1,3 @@
+[submodule "MiniBinaryParser"]
+	path = MiniBinaryParser
+	url = https://github.com/tozevv/MiniBinaryParser
