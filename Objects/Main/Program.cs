@@ -13,15 +13,21 @@ namespace _1_Lab
             /// </summary>
             /// <returns></returns>
             Menu menu = new Menu();
+            /// <summary>
+            /// BinaryParser object.
+            /// </summary>
+            /// <returns></returns>
+            BinaryParser parser = new BinaryParser();
             #endregion
             
-            #region Method call
-            //menu.Start();
+            #region Method call Menu
+            menu.Start();
             #endregion
 
-            BinaryParser parser = new BinaryParser();
+            #region Method call BinaryParser 
             byte[] sequence = new byte[] { 0x00, 0x01, 0x02, 0x03  };
-            Console.WriteLine(parser.BinaryParserCalcMatch(sequence, '+'));
+            parser.BinaryParserCalcMatch(sequence, '+');
+            #endregion
             
         }
     }
