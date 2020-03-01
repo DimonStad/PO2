@@ -1,4 +1,7 @@
-﻿namespace _1_Lab
+﻿using MiniBinaryParser;
+using System;
+
+namespace _1_Lab
 {
     class Program
     {
@@ -13,8 +16,12 @@
             #endregion
             
             #region Method call
-            menu.Start();
+            //menu.Start();
             #endregion
+
+            BinaryParser parser = new BinaryParser();
+            byte[] sequence = new byte[] { 0x00, 0x01, 0x02, 0x03  };
+            Console.WriteLine(parser.BinaryParserCalcMatch(sequence, '+'));
             
         }
     }
