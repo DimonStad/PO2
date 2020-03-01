@@ -1,3 +1,12 @@
 [submodule "MiniBinaryParser"]
 	path = MiniBinaryParser
 	url = https://github.com/tozevv/MiniBinaryParser
+[submodule "XmlParser"]
+	path = XmlParser
+	url = https://github.com/KirillOsenkov/XmlParser
+[submodule "commandline"]
+	path = commandline
+	url = https://github.com/commandlineparser/commandline
+[submodule "SOFTWARE_Submodule_Lab2"]
+	path = SOFTWARE_Submodule_Lab2
+	url = https://github.com/Tulesha/SOFTWARE_Submodule_Lab2
